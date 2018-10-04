@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="N8S-Oz-H6k">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DgV-rY-gN8" customClass="HomeViewController" customModule="FilterOff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VA7-sg-cuF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xdS-29-pyc">
+                                <rect key="frame" x="112" y="115" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="BSI-0c-gr0"/>
+                                    <constraint firstAttribute="width" constant="150" id="ST1-M7-Fl1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPh-lL-6H6">
+                                <rect key="frame" x="82" y="331" width="211" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="ZJw-tH-UpY"/>
+                                </constraints>
+                                <string key="text">18 hours 22 minutes
+until you next chat.</string>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-ZW-7tR">
+                                <rect key="frame" x="101" y="405" width="173" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="1BC-SE-v4t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <state key="normal" title="How does this work?"/>
+                                <connections>
+                                    <action selector="howDoesItWorkedTapped:" destination="DgV-rY-gN8" eventType="touchUpInside" id="xpD-hM-cS6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFd-7D-ULY">
+                                <rect key="frame" x="36" y="617" width="303" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KBD-lZ-Evo"/>
+                                </constraints>
+                                <string key="text">Your next video chat is at 9 pm ET.
+You will receive a push notification reminder.</string>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WfG-ee-h7q" firstAttribute="trailing" secondItem="Ycw-ZW-7tR" secondAttribute="trailing" constant="101" id="14S-SB-IIx"/>
+                            <constraint firstItem="xdS-29-pyc" firstAttribute="centerX" secondItem="VA7-sg-cuF" secondAttribute="centerX" id="5e6-OK-sum"/>
+                            <constraint firstItem="aPh-lL-6H6" firstAttribute="leading" secondItem="WfG-ee-h7q" secondAttribute="leading" constant="82" id="6ie-KQ-G5j"/>
+                            <constraint firstItem="WfG-ee-h7q" firstAttribute="trailing" secondItem="nFd-7D-ULY" secondAttribute="trailing" constant="36" id="Gwz-Yz-7PB"/>
+                            <constraint firstItem="nFd-7D-ULY" firstAttribute="leading" secondItem="WfG-ee-h7q" secondAttribute="leading" constant="36" id="Xyl-lN-xzi"/>
+                            <constraint firstItem="WfG-ee-h7q" firstAttribute="bottom" secondItem="nFd-7D-ULY" secondAttribute="bottom" constant="20" id="ccD-1f-NQ4"/>
+                            <constraint firstItem="WfG-ee-h7q" firstAttribute="trailing" secondItem="aPh-lL-6H6" secondAttribute="trailing" constant="82" id="dO6-fm-b9E"/>
+                            <constraint firstItem="Ycw-ZW-7tR" firstAttribute="top" secondItem="aPh-lL-6H6" secondAttribute="bottom" constant="8" id="drd-kL-37x"/>
+                            <constraint firstItem="xdS-29-pyc" firstAttribute="top" secondItem="WfG-ee-h7q" secondAttribute="top" constant="95" id="xRl-Bw-S9e"/>
+                            <constraint firstItem="Ycw-ZW-7tR" firstAttribute="leading" secondItem="WfG-ee-h7q" secondAttribute="leading" constant="101" id="xhg-mG-jBA"/>
+                            <constraint firstItem="aPh-lL-6H6" firstAttribute="top" secondItem="xdS-29-pyc" secondAttribute="bottom" constant="66" id="xoA-1i-ROq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WfG-ee-h7q"/>
+                    </view>
+                    <connections>
+                        <outlet property="howDoesItWorkBtn" destination="Ycw-ZW-7tR" id="d0q-f6-nQ5"/>
+                        <outlet property="userImageView" destination="xdS-29-pyc" id="uTt-1b-kWz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sii-XE-STB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="61.600000000000001" y="-25.637181409295355"/>
+        </scene>
+    </scenes>
+</document>

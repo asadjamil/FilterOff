@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Bold.ttf">
+            <string>Lato-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="hEW-6h-Twq">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PKE-sa-0vF" customClass="OnBoardingViewController" customModule="FilterOff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fXw-JO-ddL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wk-1" translatesAutoresizingMaskIntoConstraints="NO" id="TD4-8E-B6j">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="691"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filteroff-login-logo" translatesAutoresizingMaskIntoConstraints="NO" id="KBR-Aa-kwF">
+                                <rect key="frame" x="36" y="46" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2OL-dG-5vH"/>
+                                    <constraint firstAttribute="height" constant="40" id="x1r-Gm-uLe"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4fv-bw-ils">
+                                <rect key="frame" x="36" y="121" width="303" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="125" id="58r-Dj-Yj4"/>
+                                </constraints>
+                                <string key="text">You will be 
+connected with 3
+people once a day.</string>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="34"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="6" translatesAutoresizingMaskIntoConstraints="NO" id="tft-1x-is7">
+                                <rect key="frame" x="160" y="538" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Ttd-Z5-YVA"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.96078431372549022" green="0.47843137254901957" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UxA-Qb-VYF">
+                                <rect key="frame" x="93" y="575" width="189" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WxT-21-3cS"/>
+                                    <constraint firstAttribute="width" constant="189" id="rAo-bd-5dY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="18"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="nextBtnTapped:" destination="PKE-sa-0vF" eventType="touchUpInside" id="Ai1-Bi-xTd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KBR-Aa-kwF" firstAttribute="top" secondItem="Bnk-8J-bHr" secondAttribute="top" constant="26" id="5Mx-TI-Zwt"/>
+                            <constraint firstItem="Bnk-8J-bHr" firstAttribute="bottom" secondItem="UxA-Qb-VYF" secondAttribute="bottom" constant="44" id="5xp-ng-PQ7"/>
+                            <constraint firstItem="4fv-bw-ils" firstAttribute="top" secondItem="KBR-Aa-kwF" secondAttribute="bottom" constant="35" id="7JO-fJ-1l5"/>
+                            <constraint firstItem="TD4-8E-B6j" firstAttribute="leading" secondItem="Bnk-8J-bHr" secondAttribute="leading" id="8PM-PK-q7E"/>
+                            <constraint firstItem="Bnk-8J-bHr" firstAttribute="bottom" secondItem="TD4-8E-B6j" secondAttribute="bottom" id="B3s-83-x1a"/>
+                            <constraint firstItem="UxA-Qb-VYF" firstAttribute="leading" secondItem="Bnk-8J-bHr" secondAttribute="leading" constant="93" id="FBo-LR-gaP"/>
+                            <constraint firstItem="Bnk-8J-bHr" firstAttribute="trailing" secondItem="tft-1x-is7" secondAttribute="trailing" constant="160" id="FnO-Ni-AGC"/>
+                            <constraint firstItem="Bnk-8J-bHr" firstAttribute="trailing" secondItem="TD4-8E-B6j" secondAttribute="trailing" id="NkJ-iv-Zgb"/>
+                            <constraint firstItem="Bnk-8J-bHr" firstAttribute="trailing" secondItem="4fv-bw-ils" secondAttribute="trailing" constant="36" id="OIv-AR-GY8"/>
+                            <constraint firstItem="4fv-bw-ils" firstAttribute="leading" secondItem="Bnk-8J-bHr" secondAttribute="leading" constant="36" id="Td0-ki-sF5"/>
+                            <constraint firstItem="tft-1x-is7" firstAttribute="leading" secondItem="Bnk-8J-bHr" secondAttribute="leading" constant="160" id="ZKg-Up-0hd"/>
+                            <constraint firstItem="TD4-8E-B6j" firstAttribute="top" secondItem="Bnk-8J-bHr" secondAttribute="top" constant="-44" id="c9Q-td-7VP"/>
+                            <constraint firstItem="KBR-Aa-kwF" firstAttribute="leading" secondItem="Bnk-8J-bHr" secondAttribute="leading" constant="36" id="hd4-n4-U8X"/>
+                            <constraint firstItem="UxA-Qb-VYF" firstAttribute="top" secondItem="tft-1x-is7" secondAttribute="bottom" id="lnc-cA-gh8"/>
+                            <constraint firstItem="Bnk-8J-bHr" firstAttribute="trailing" secondItem="UxA-Qb-VYF" secondAttribute="trailing" constant="93" id="yBR-zI-UWL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bnk-8J-bHr"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextBtnLabel" destination="UxA-Qb-VYF" id="rsf-23-l88"/>
+                        <outlet property="pageControl" destination="tft-1x-is7" id="nM9-6s-utH"/>
+                        <outlet property="walkThroughLabel" destination="4fv-bw-ils" id="MvD-Mz-BDm"/>
+                        <outlet property="walkThroughUIImageView" destination="TD4-8E-B6j" id="X4X-8s-l1X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j79-oy-LRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-192.95352323838082"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="filteroff-login-logo" width="61" height="40"/>
+        <image name="wk-1" width="375" height="667"/>
+    </resources>
+</document>

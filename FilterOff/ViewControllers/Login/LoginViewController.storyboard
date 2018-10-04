@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5px-2s-iyj">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Lato-Black.ttf">
+            <string>Lato-Black</string>
+        </array>
+        <array key="Lato-Regular.ttf">
+            <string>Lato-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginViewController-->
+        <scene sceneID="LDk-pS-srp">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" title="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5px-2s-iyj" customClass="LoginViewController" customModule="FilterOff" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ig9-lY-Rtp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-bg" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-NQ-8mt">
+                                <rect key="frame" x="0.0" y="-24" width="375" height="691"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUA-XN-yeK">
+                                <rect key="frame" x="35" y="110" width="305" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="DHG-Z7-5lj"/>
+                                </constraints>
+                                <string key="text">IT'S TIME
+TO TAKE THE 
+FILTER OFF</string>
+                                <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="34"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filteroff-login-logo" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-ec-VYc">
+                                <rect key="frame" x="36" y="46" width="60" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="2Tw-4k-xAS"/>
+                                    <constraint firstAttribute="height" constant="40" id="Lh3-MG-R1R"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARi-mP-mNQ">
+                                <rect key="frame" x="35" y="243" width="305" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="w9w-yM-fE9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="14"/>
+                                <state key="normal" title="How does this work?">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="howItWorkTapped:" destination="5px-2s-iyj" eventType="touchUpInside" id="P5g-6g-zi1"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGS-RO-fea">
+                                <rect key="frame" x="35" y="582" width="305" height="48"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook-f-logo-white-background-21" translatesAutoresizingMaskIntoConstraints="NO" id="JwJ-O2-mG8">
+                                        <rect key="frame" x="7" y="7" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="KkS-JS-S2h"/>
+                                            <constraint firstAttribute="height" constant="34" id="oLm-c0-ShP"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxh-ha-Iqq">
+                                        <rect key="frame" x="49" y="13" width="248" height="22"/>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Login ">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Lato-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="with">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Lato-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content=" Facebook">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" size="17" name="Lato-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp7-LF-bF5">
+                                        <rect key="frame" x="0.0" y="0.0" width="305" height="48"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="facebookLoginTapped:" destination="5px-2s-iyj" eventType="touchUpInside" id="MYg-wR-NfD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.23137254901960785" green="0.34901960784313724" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Cxh-ha-Iqq" firstAttribute="leading" secondItem="JwJ-O2-mG8" secondAttribute="trailing" constant="8" id="B79-wS-ter"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cxh-ha-Iqq" secondAttribute="trailing" constant="8" id="O3N-GL-tbc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cxh-ha-Iqq" secondAttribute="bottom" constant="13" id="ReA-YC-v5N"/>
+                                    <constraint firstItem="Cxh-ha-Iqq" firstAttribute="top" secondItem="oGS-RO-fea" secondAttribute="top" constant="13" id="TDU-61-vTH"/>
+                                    <constraint firstAttribute="height" constant="48" id="jaO-W2-Xgl"/>
+                                    <constraint firstItem="JwJ-O2-mG8" firstAttribute="leading" secondItem="oGS-RO-fea" secondAttribute="leading" constant="7" id="lsI-Gk-aUX"/>
+                                    <constraint firstItem="JwJ-O2-mG8" firstAttribute="centerY" secondItem="oGS-RO-fea" secondAttribute="centerY" id="vYh-iD-WG1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We will never post on your behalf." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebz-0G-Syx">
+                                <rect key="frame" x="35" y="639" width="305" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="WiM-LI-gDL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="12"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mI7-ec-VYc" firstAttribute="leading" secondItem="por-Bg-y43" secondAttribute="leading" constant="36" id="3tO-SW-HZh"/>
+                            <constraint firstItem="I4b-NQ-8mt" firstAttribute="leading" secondItem="por-Bg-y43" secondAttribute="leading" id="AME-zw-9dj"/>
+                            <constraint firstItem="ebz-0G-Syx" firstAttribute="leading" secondItem="por-Bg-y43" secondAttribute="leading" constant="35" id="FnF-58-PpP"/>
+                            <constraint firstItem="oGS-RO-fea" firstAttribute="leading" secondItem="por-Bg-y43" secondAttribute="leading" constant="35" id="Oh6-Dk-rlE"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="trailing" secondItem="I4b-NQ-8mt" secondAttribute="trailing" id="Rr6-Cb-Ac3"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="trailing" secondItem="ARi-mP-mNQ" secondAttribute="trailing" constant="35" id="TQN-9D-GTH"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="trailing" secondItem="sUA-XN-yeK" secondAttribute="trailing" constant="35" id="Wvl-Uj-qr5"/>
+                            <constraint firstItem="sUA-XN-yeK" firstAttribute="top" secondItem="mI7-ec-VYc" secondAttribute="bottom" constant="24" id="bK2-Qo-etD"/>
+                            <constraint firstItem="ARi-mP-mNQ" firstAttribute="leading" secondItem="por-Bg-y43" secondAttribute="leading" constant="35" id="eYh-a5-Ord"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="trailing" secondItem="oGS-RO-fea" secondAttribute="trailing" constant="35" id="fTB-Xy-gW7"/>
+                            <constraint firstItem="ARi-mP-mNQ" firstAttribute="top" secondItem="sUA-XN-yeK" secondAttribute="bottom" constant="8" id="gE1-Sn-Sw7"/>
+                            <constraint firstItem="mI7-ec-VYc" firstAttribute="top" secondItem="por-Bg-y43" secondAttribute="top" constant="26" id="jmH-C8-0J0"/>
+                            <constraint firstItem="sUA-XN-yeK" firstAttribute="leading" secondItem="por-Bg-y43" secondAttribute="leading" constant="35" id="r53-Ja-c7z"/>
+                            <constraint firstItem="ebz-0G-Syx" firstAttribute="top" secondItem="oGS-RO-fea" secondAttribute="bottom" constant="9" id="sSv-wI-qfb"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="trailing" secondItem="ebz-0G-Syx" secondAttribute="trailing" constant="35" id="t7n-BD-Z0c"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="bottom" secondItem="I4b-NQ-8mt" secondAttribute="bottom" id="wqt-6o-498"/>
+                            <constraint firstItem="I4b-NQ-8mt" firstAttribute="top" secondItem="por-Bg-y43" secondAttribute="top" constant="-44" id="xze-dc-17n"/>
+                            <constraint firstItem="por-Bg-y43" firstAttribute="bottom" secondItem="ebz-0G-Syx" secondAttribute="bottom" constant="13" id="ysW-h7-g2U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="por-Bg-y43"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7jw-Da-kBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.19999999999999" y="-126.38680659670166"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebook-f-logo-white-background-21" width="34" height="34"/>
+        <image name="filteroff-login-logo" width="61" height="40"/>
+        <image name="login-bg" width="375" height="667"/>
+    </resources>
+</document>
